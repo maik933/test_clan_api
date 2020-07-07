@@ -277,7 +277,7 @@ class ClanController extends AbstractController
 
     public function getList (): void
     {
-        $this->response200(array_map(function ($dto) {
+        $this->response200(array_map(function (ClanDto $dto): array {
             return $dto->toArray();
         }, $this->getListClanUC->execute()));
     }
