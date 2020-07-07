@@ -280,6 +280,7 @@ class ClanController extends AbstractController
         $this->response200(array_map(function (ClanDto $dto): array {
             return $dto->toArray();
         }, $this->getListClanUC->execute()));
+        //code-branch02
         //new-branch-3
     }
 }
