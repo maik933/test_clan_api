@@ -281,5 +281,6 @@ class ClanController extends AbstractController
             return $dto->toArray();
         }, $this->getListClanUC->execute()));
         //code-branch02
+        //new-branch-3
     }
 }
